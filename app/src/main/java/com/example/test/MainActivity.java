@@ -2,7 +2,6 @@ package com.example.test;
 
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -24,13 +23,14 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        getSupportActionBar().setTitle(getString(R.string.title_activity_cp1));
 
         FragmentTransaction fragment = getSupportFragmentManager().beginTransaction();
         fragment.replace(R.id.fragment_layout, new MainFragment()); // f1_container is your FrameLayout container
         fragment.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
         fragment.addToBackStack(null);
         fragment.commit();
-        getSupportActionBar().setTitle(getString(R.string.title_activity_cp1));
+
     }
 
     @Override
@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
