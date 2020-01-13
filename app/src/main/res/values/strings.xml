@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">VOIP USSD Sample</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_activity_cp1">Test</string>
+    <string name="action_config1">Test Config</string>
+    <string name="refuse_permissions">Please allow call permission</string>
+    <string name="usss_input">Introduce # ussd</string>
+    <string name="copyright">RomellFudi</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
